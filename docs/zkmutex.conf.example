@@ -1,0 +1,11 @@
+# the zookeeper connection string
+ensemble: '192.0.2.1:2181,192.0.2.2:2181,192.0.2.3:2181/chroot'
+# which sync group this host belongs to. identical jobs from the
+# same sync group contend for the same lock
+sync.group: example
+# logfile for zkonce
+log.file: /tmp/zkmutex.log
+# user to run the command as. Leave empty to run the command as
+# the user that zkonce is started as. Only root can execute
+# commands as a different user.
+run.as.user: nobody
