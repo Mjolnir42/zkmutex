@@ -15,7 +15,7 @@ concurrently:
 
 ```
 zkmutex -- puppet apply
-zkmutex -- shutdown -r now
+zkmutex -- do_magic.sh
 ```
 
 Multiple hosts trying to run either of them will get serialized.
